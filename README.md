@@ -1,11 +1,10 @@
-[![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?business=EVN8JACZRMPTJ&no_recurring=1&currency_code=CAD)
+# smartthings-google-nest-sdm
 
-# homebridge-google-nest-sdm
+A SmartThings plugin for Google Nest devices that uses the [Google Smart Device Management API](https://developers.google.com/nest/device-access). Supports Cameras, Doorbells, Displays, and Thermostats.
 
-A Homebridge plugin for Google Nest devices that uses the [Google Smart Device Management API](https://developers.google.com/nest/device-access). Supports Cameras, Doorbells, Displays, and Thermostats.
+**THIS PLUGIN IS NOT FINISHED. COME BACK LATER.**
 
-**Please read the [FAQ](https://github.com/potmat/homebridge-google-nest-sdm#faq) before creating an issue.**
+**Please read the [FAQ](https://github.com/aokerholm/smartthings-google-nest-sdm#faq) before creating an issue.**
 
 # Disclaimer
 
@@ -13,24 +12,7 @@ This package is not provided, endorsed, affiliated with, or supported by Google 
 
 # Installation
 
-``npm install -g --unsafe-perm homebridge-google-nest-sdm``
-
-Don't forget the ``--unsafe-perm`` part!
-
-# Example Homebridge config:
-
-    {
-        "platform" : "homebridge-google-nest-sdm",
-        "clientId": "...",
-        "clientSecret": "...",
-        "projectId": "...",
-        "refreshToken": "...",
-        "subscriptionId": "...",
-        "gcpProjectId": "<optional>",
-        "vEncoder": "<optional>"
-    }
-
-I recommend you use the plugin config UI to enter these values.
+WIP
 
 # Where do the config values come from?
 
@@ -109,14 +91,6 @@ I tried very hard to avoid having to transcode the video, which would allow the 
 **Q**: Do I really have to pay $5 to use the API?
 
 **A**: Yup.
-
-**Q**: Isn't there already a Nest plugin for Homebridge that does more stuff than this?
-
-**A**: Yup.
-
-Q: So why this plugin?  
-
-A: Well, the "official" Homebridge Nest plugin(s) use undocumented APIs.  That is, the authors reverse engineered the APIs the Nest app itself uses.  Don't get me wrong, I have no problem with that. But the SDM API is a documented API for precisely this use case.  The more important reason for making this plugin is the same as the reason for climbing a mountain, because you can.
 
 Q: I just added a Nest device to my account, but it's not showing up in Home. Why?
 
